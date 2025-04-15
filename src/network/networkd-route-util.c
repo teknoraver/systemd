@@ -605,3 +605,19 @@ int config_parse_route_table_names(
                 TAKE_PTR(name);
         }
 }
+
+
+int config_parse_route_table_delete(
+                const char *unit,
+                const char *filename,
+                unsigned line,
+                const char *section,
+                unsigned section_line,
+                const char *lvalue,
+                int ltype,
+                const char *rvalue,
+                void *data,
+                void *userdata) {
+
+        return 0;
+}

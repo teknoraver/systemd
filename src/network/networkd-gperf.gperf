@@ -32,6 +32,8 @@ Network.ManageForeignNextHops,           config_parse_bool,                     
 Network.RouteTable,                      config_parse_route_table_names,          0,                                                         0
 Network.IPv4Forwarding,                  config_parse_tristate,                   0,                                                         offsetof(Manager, ip_forwarding[0])
 Network.IPv6Forwarding,                  config_parse_tristate,                   0,                                                         offsetof(Manager, ip_forwarding[1])
+Network.IPv4RoutingTableDelete,          config_parse_route_table_delete,         0,                                                         0
+Network.IPv6RoutingTableDelete,          config_parse_route_table_delete,         0,                                                         0
 Network.IPv6PrivacyExtensions,           config_parse_ipv6_privacy_extensions,    0,                                                         offsetof(Manager, ipv6_privacy_extensions)
 Network.UseDomains,                      config_parse_use_domains,                0,                                                         offsetof(Manager, use_domains)
 IPv6AcceptRA.UseDomains,                 config_parse_use_domains,                0,                                                         offsetof(Manager, ndisc_use_domains)

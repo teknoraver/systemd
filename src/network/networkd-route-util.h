@@ -48,3 +48,4 @@ int manager_get_route_table_from_string(const Manager *m, const char *table, uin
 int manager_get_route_table_to_string(const Manager *m, uint32_t table, bool append_num, char **ret);
 
 CONFIG_PARSER_PROTOTYPE(config_parse_route_table_names);
+CONFIG_PARSER_PROTOTYPE(config_parse_route_table_delete);
